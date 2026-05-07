@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a1a6b"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    <linearGradient id="balloonGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9f43"/>
+      <stop offset="100%" stop-color="#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="balloon2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4D96FF"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="balloon3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6BCB77"/>
+      <stop offset="100%" stop-color="#FFD93D"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#sky)"/>
+  <!-- Stars -->
+  <circle cx="80" cy="80" r="5" fill="white" opacity="0.7"/>
+  <circle cx="430" cy="60" r="4" fill="white" opacity="0.6"/>
+  <circle cx="340" cy="110" r="3" fill="white" opacity="0.5"/>
+  <circle cx="150" cy="130" r="3" fill="white" opacity="0.5"/>
+  <!-- Left balloon (blue/purple) -->
+  <ellipse cx="170" cy="230" rx="62" ry="80" fill="url(#balloon2)" opacity="0.95"/>
+  <ellipse cx="155" cy="200" rx="18" ry="22" fill="white" opacity="0.25"/>
+  <path d="M170 310 L163 330 L177 330 Z" fill="#a855f7"/>
+  <line x1="170" y1="330" x2="170" y2="370" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+  <!-- Center balloon (orange/red) — biggest -->
+  <ellipse cx="256" cy="195" rx="82" ry="105" fill="url(#balloonGrad)" opacity="0.98"/>
+  <ellipse cx="234" cy="158" rx="24" ry="30" fill="white" opacity="0.28"/>
+  <path d="M256 300 L246 322 L266 322 Z" fill="#ff6b6b"/>
+  <line x1="256" y1="322" x2="256" y2="380" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right balloon (green/yellow) -->
+  <ellipse cx="342" cy="245" rx="58" ry="74" fill="url(#balloon3)" opacity="0.95"/>
+  <ellipse cx="328" cy="218" rx="16" ry="20" fill="white" opacity="0.25"/>
+  <path d="M342 319 L335 338 L349 338 Z" fill="#6BCB77"/>
+  <line x1="342" y1="338" x2="342" y2="375" stroke="#6BCB77" stroke-width="3" stroke-linecap="round"/>
+  <!-- Crown -->
+  <path d="M196 430 L220 400 L256 422 L292 400 L316 430 Z" fill="#FFD93D" stroke="#FF9F43" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="220" cy="400" r="8" fill="#FF6B6B"/>
+  <circle cx="256" cy="422" r="8" fill="#FF6B6B"/>
+  <circle cx="292" cy="400" r="8" fill="#FF6B6B"/>
+  <rect x="196" y="428" width="120" height="22" rx="4" fill="#FFD93D"/>
+</svg>

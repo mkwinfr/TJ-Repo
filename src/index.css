@@ -1,0 +1,36 @@
+/* Fonts are bundled via @fontsource imports in main.jsx for offline support */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* Prevent iOS rubber-band scroll during gameplay */
+  overflow: hidden;
+  overscroll-behavior: none;
+  /* Remove 300ms tap delay on mobile */
+  touch-action: manipulation;
+}
+
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100svh;
+  /* Respect notch / Dynamic Island on iOS */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+body {
+  font-family: 'Lilita One', cursive;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent text selection during rapid tapping */
+  user-select: none;
+  -webkit-user-select: none;
+}
